@@ -42,4 +42,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                           XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX, XXXXXXX
                                       //`--------------------------'  `--------------------------'
   ),
+    [2] = LAYOUT_split_3x5_3(
+  //,-----------------------------------------------------.                    ,-----------------------------------------------------.
+      LSFT(KC_LEFT_BRACKET), LSFT(KC_RIGHT_BRACKET),    XXXXXXX,    XXXXXXX,    XXXXXXX,                         XXXXXXX,    KC_SEMICOLON,    LSFT(KC_SEMICOLON),    KC_LEFT_BRACKET,    KC_RIGHT_BRACKET,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+     KC_GRAVE, LSFT(KC_GRAVE), LSFT(KC_BACKSLASH), LSFT(KC_MINUS), KC_MINUS,           LSFT(KC_EQUAL),   KC_EQUAL,KC_BACKSLASH, KC_QUOTE,    LSFT(KC_QUOTE),
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      RSFT(KC_1), RSFT(KC_2), RSFT(KC_3), RSFT(KC_4), RSFT(KC_5),                      LSFT(KC_6), LSFT(KC_7), LSFT(KC_8), LSFT(KC_9), LSFT(KC_0),
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+                                          XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX, XXXXXXX
+                                      //`--------------------------'  `--------------------------'
+  ),
 };
