@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
           KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                           LT(1,KC_ESC),LT(2,KC_SPC),  LT(3,KC_TAB),LT(4,KC_ENT),  LT(5,KC_BSPC), LT(6,KC_DEL)
+                           LT(1,KC_ESC),LT(3,KC_SPC),  LT(2,KC_TAB),LT(4,KC_ENT),  LT(5,KC_BSPC), LT(6,KC_DEL)
 
   ),
     [1] = LAYOUT_split_3x5_3(
@@ -44,12 +44,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
     [2] = LAYOUT_split_3x5_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      LSFT(KC_LEFT_BRACKET), LSFT(KC_RIGHT_BRACKET),    XXXXXXX,    XXXXXXX,    XXXXXXX,                         XXXXXXX,    KC_SEMICOLON,    LSFT(KC_SEMICOLON),    KC_LEFT_BRACKET,    KC_RIGHT_BRACKET,
-  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     KC_GRAVE, LSFT(KC_GRAVE), LSFT(KC_BACKSLASH), LSFT(KC_MINUS), KC_MINUS,           LSFT(KC_EQUAL),   KC_EQUAL,KC_BACKSLASH, KC_QUOTE,    LSFT(KC_QUOTE),
-  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       RSFT(KC_1), RSFT(KC_2), RSFT(KC_3), RSFT(KC_4), RSFT(KC_5),                      LSFT(KC_6), LSFT(KC_7), LSFT(KC_8), LSFT(KC_9), LSFT(KC_0),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+     KC_GRAVE, LSFT(KC_GRAVE), LSFT(KC_BACKSLASH), LSFT(KC_MINUS), KC_MINUS,           LSFT(KC_EQUAL),   KC_EQUAL,KC_BACKSLASH, KC_QUOTE,    LSFT(KC_QUOTE),
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      LSFT(KC_LEFT_BRACKET), LSFT(KC_RIGHT_BRACKET),    XXXXXXX,    XXXXXXX,    XXXXXXX,                         XXXXXXX,    LSFT(KC_LEFT_BRACKET), LSFT(KC_RIGHT_BRACKET),    KC_LEFT_BRACKET,    KC_RIGHT_BRACKET,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+                                          XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX, XXXXXXX
+                                      //`--------------------------'  `--------------------------'
+  ),
+    [3] = LAYOUT_split_3x5_3(
+        XXXXXXX,     XXXXXXX,    XXXXXXX,  XXXXXXX,   XXXXXXX,              XXXXXXX,             LSG(KC_LEFT),             LSG(KC_RIGHT),             XXXXXXX,             XXXXXXX,             \
+        XXXXXXX,           XXXXXXX,           XXXXXXX,           XXXXXXX,           XXXXXXX,              XXXXXXX,           KC_LEFT,           KC_DOWN,           KC_UP,             KC_RGHT,           \
+        XXXXXXX,              XXXXXXX,           XXXXXXX,    XXXXXXX,    XXXXXXX,              XXXXXXX,            KC_HOME,           KC_PGDN,           KC_PGUP,           KC_END,            \
                                           XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX, XXXXXXX
                                       //`--------------------------'  `--------------------------'
   ),
