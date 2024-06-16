@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
           LGUI_T(KC_A),    LALT_T(KC_S),    LCTL_T(KC_D),    LSFT_T(KC_F),    KC_G,                         KC_H,    LSFT_T(KC_J),    LCTL_T(KC_K),    LALT_T(KC_L), LGUI_T(KC_SCLN),
   //|---------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,
+          KC_Z,    RALT_T(KC_X),    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  RALT_T(KC_DOT), KC_SLSH,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                            LT(1,KC_ESC),LT(3,KC_SPC),  LT(2,KC_TAB),LT(4,KC_ENT),  LT(5,KC_BSPC), LT(6,KC_DEL)
 
@@ -57,6 +57,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX,     XXXXXXX,    XXXXXXX,  XXXXXXX,   XXXXXXX,              XXXXXXX,             LSG(KC_LEFT),             LSG(KC_RIGHT),             XXXXXXX,             XXXXXXX,             \
         XXXXXXX,           XXXXXXX,           XXXXXXX,           XXXXXXX,           XXXXXXX,              XXXXXXX,           KC_LEFT,           KC_DOWN,           KC_UP,             KC_RGHT,           \
         XXXXXXX,              XXXXXXX,           XXXXXXX,    XXXXXXX,    XXXXXXX,              XXXXXXX,            KC_HOME,           KC_PGDN,           KC_PGUP,           KC_END,            \
+                                          XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX, XXXXXXX
+                                      //`--------------------------'  `--------------------------'
+  ),
+    [4] = LAYOUT_split_3x5_3(
+        XXXXXXX,     XXXXXXX,    XXXXXXX,  XXXXXXX,   XXXXXXX,              XXXXXXX,             XXXXXXX,             KC_F11,             KC_F12,             XXXXXXX,             \
+        KC_F1,           KC_F2,           KC_F3,           KC_F4,           KC_F5,              KC_F6,           KC_F7,           KC_F8,           KC_F9,             KC_F10,           \
+        XXXXXXX,              XXXXXXX,           XXXXXXX,    XXXXXXX,    XXXXXXX,              XXXXXXX,            XXXXXXX,           XXXXXXX,           XXXXXXX,           XXXXXXX,            \
                                           XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX, XXXXXXX
                                       //`--------------------------'  `--------------------------'
   ),
